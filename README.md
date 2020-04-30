@@ -2,11 +2,11 @@
 
 ## Inleiding
 
-Doel van dit script is de automatische berekening van de breedte van de wegdelen zoals ze in de Basis Grootschalige Topografie (BGT) zijn opgenomen. De breedte van de wegdelen wordt vervolgens gekoppeld aan een lijnen dataset met wegvakken, zoals bijvoorbeeld het Nationaal Wegenbestand (NWB), OpenStreetMap of een eigen wegennetwerk. 
+Doel van dit script is de automatische berekening van de breedte van de wegdelen zoals ze in de Basis Grootschalige Topografie (BGT) zijn opgenomen. De breedte van de wegdelen kan vervolgens worden gekoppeld aan een lijnen dataset met wegvakken, zoals bijvoorbeeld het Nationaal Wegenbestand (NWB), OpenStreetMap of een eigen wegennetwerk. 
 
 **WAARSCHUWING!**
 
-Bruikbaarheid van de resultaten van dit script hangt af van inhoudelijke overwegingen die de gebruiker zich stelt bij het formuleren van de vraag "hoe breed is een weg?". De gebruiker dient zeer kritisch naar de resultaten te kijken, en zo nodig het script aan te passen aan de eigen inhoudelijke overwegingen. 
+Bruikbaarheid van de resultaten van dit script hangt af van inhoudelijke overwegingen die de gebruiker zich stelt bij het formuleren van de vraag "hoe breed is een weg?". Dit kan voor elke specifieke toepassing weer anders zijn. De gebruiker dient dan ook zeer kritisch naar de resultaten te kijken, en zo nodig het script aan te passen. 
 
 ## Korte uitleg
 Het script voert de volgende acties uit:
@@ -62,6 +62,9 @@ SELECT wh_wegbreedte_bgt_generiek('nwb_lunetten', 'wegvak_kolom', true, 2345667)
 
 ## Voorbeeld resultaat
 
-Nog opnemen
+Hier een voorbeeld van een resultaat, ingezoomd op Utrecht Lunetten:
 
+![shetlands](https://github.com/willemhoffmans/bgt_wegbreedte/img/shetlands.png "Shetlands Utrecht")
+
+Het wegvak is in roze weergegeven, de dwarslijntjes (met lengte) in lichtgroen. Er is één 'uitbijter' van 17,6 meter, en deze heeft veel invloed op de gemiddelde lengte (G = 6.56 meter, standaarddeviatie D = 4.16 meter). Na uitsluiting van dwarslijntjes die meer dan 1 STD afwijken krijg je de "operationele breedte": 5.18 meter. Het afwijkende lijntje wordt rood gemarkeerd (afwijking = H). 
 
