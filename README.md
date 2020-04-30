@@ -64,7 +64,7 @@ SELECT wh_wegbreedte_bgt_generiek('nwb_lunetten', 'wegvak_kolom', true, 2345667)
 
 Hier een voorbeeld van een resultaat, ingezoomd op Utrecht Lunetten:
 
-![shetlands](https://github.com/willemhoffmans/bgt_wegbreedte/tree/master/img/shetlands.png "Shetlands Utrecht")
+![shetlands](https://github.com/willemhoffmans/bgt_wegbreedte/blob/master/img/shetlands.png "Shetlands Utrecht")
 
 Het wegvak is in roze weergegeven, de dwarslijntjes (met lengte) in lichtgroen. Er is één 'uitbijter' van 17,6 meter, en deze heeft veel invloed op de gemiddelde lengte (G = 6.56 meter, standaarddeviatie D = 4.16 meter). Na uitsluiting van dwarslijntjes die meer dan 1 STD afwijken krijg je de "operationele breedte": 5.18 meter. Het afwijkende lijntje wordt rood gemarkeerd (afwijking = H). 
 
